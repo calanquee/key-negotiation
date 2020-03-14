@@ -18,7 +18,6 @@ sm2_crypt = sm2.CryptSM2(public_key=server_public_key, private_key=client_privat
 
 client = socket.socket(socket.AF_INET,socket.SOCK_STREAM) #声明socket类型，同时生成链接对象
 client.connect(('localhost',8080))
-#msg = '欢迎访问菜鸟教程！'  #strip默认取出字符串的头尾空格
 
 
 print('I am client!')
